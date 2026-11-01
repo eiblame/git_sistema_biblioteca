@@ -17,8 +17,6 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SECRET_KEY"] = "biblioteca"
 
 db.init_app(app)
-
-app.register_blueprint(principal)
 app.register_blueprint(autores)
 app.register_blueprint(livros)
 app.register_blueprint(leitores)
