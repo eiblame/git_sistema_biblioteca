@@ -13,7 +13,6 @@ from controllers.emprestimos import emprestimos as emprestimos_bp
 app = Flask(__name__)
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///biblioteca.db"
-app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SECRET_KEY"] = "biblioteca"
 
 db.init_app(app)
